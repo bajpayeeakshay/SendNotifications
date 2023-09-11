@@ -1,6 +1,9 @@
 
 # SendNotifications
 
+## Description
+- The Application Reads data from Database using an Timer Triggered Azure Function and then writes converts the data to ServiceBusMessage and writes the data to the specified ServiceBus Queue. 
+
 ## Running the Application Locally
 
 ### Local.Settings.Json
@@ -22,7 +25,7 @@
       }
 
 
-- Please copy local.settings.example.json and rename that to local.settings.json 
+- local.settings.example.json is also included in the project for reference, kindly copy the local.settings.example.json and replace the connection strings and queue name to run the application locally
 
 ### Database
 If you want to setup the database for this code base then please follow the steps as mentioned below:
